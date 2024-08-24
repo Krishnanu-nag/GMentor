@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import Navbar from "./Components/Navbar";
+import ReactMarkdown from "react-markdown";
 import "./App.css"; // Import the CSS file
 
 const Chatbot = () => {
@@ -8,6 +9,10 @@ const Chatbot = () => {
   const [messages, setMessages] = useState([]);
   const [isTyping, setIsTyping] = useState(false);
 
+  // Reference to the chat window
+  const chatWindowRef = useRef(null);
+
+  // Function to handle sending a message
   const handleSend = async () => {
     if (!input.trim()) return;
 
@@ -31,27 +36,31 @@ const Chatbot = () => {
     setIsTyping(false);
   };
 
+  // Scroll to the bottom of the chat window whenever a new message is added
+  useEffect(() => {
+    if (chatWindowRef.current) {
+      chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
+    }
+  }, [messages]);
+
   return (
     <>
       <Navbar />
       <div className="chat-container">
-        <div className="chat-window">
+        <div className="chat-window" ref={chatWindowRef}>
           {messages.map((msg, index) => (
             <div
               key={index}
               className={`chat-message ${
-                msg.sender === "user" && <br /> ? "user-message" : "bot-message"
+                msg.sender === "user" ? "user-message" : "bot-message"
               }`}
             >
-              <strong>{msg.sender}:</strong>{" "}
-              {msg.sender === "Gmentor" && <br />}{" "}
-              {/* Add a line break after 'Gmentor:' */}
-              {msg.text}
+              <strong className="G-mentor-msg">{msg.sender}</strong>{" "}
+              <ReactMarkdown>{msg.text}</ReactMarkdown>
             </div>
           ))}
           {isTyping && (
             <div className="chat-message bot-message">
-              <strong>Gmentor is typing</strong>
               <div className="typing-dots">
                 <span></span>
                 <span></span>
