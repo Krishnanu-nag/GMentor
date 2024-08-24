@@ -1,0 +1,153 @@
+/* Navbar base styles */
+.navbar {
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* position: fixed; */
+    top: 0;
+    z-index: 1000;
+}
+.logo img{
+    width:100px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Logo styles */
+.logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+/* Menu styles */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    transition: transform 0.3s ease;
+    justify-content: center;
+    flex: 2;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #dddddd;
+}
+
+/* Auth button styles */
+.auth-buttons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.register-login-button {
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: #3f10e8;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.register-login-button:hover {
+    background-color:  #3f10e8;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+/* MENU button styles */
+.menu-button {
+    display: none; /* Default is hidden for larger screens */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 200px;
+        background-image: url("./bg.svg");
+        background-size: cover;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 1rem;
+        transform: translateX(100%);
+        box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3);
+        /* Ensures items start from the top */
+        justify-content: flex-start;
+    }
+
+    .menu-open {
+        transform: translateX(0);
+    }
+
+    .menu li {
+        padding: 10px;
+    }
+
+    .menu-button {
+        display: block; /* Show MENU button on small screens */
+        margin-right: 50px; /* Pushes it to the far right */
+        background: 0;
+    }
+
+    .menu-button img {
+        width: 30px;
+    }
+
+    .auth-buttons {
+        display: none; /* Hide original auth buttons on small screens */
+    }
+
+    .menu .register-login-button {
+        display: block; /* Show register/login button in the responsive menu */
+        width: 100%;
+        margin-top: 1rem;
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .navbar {
+        padding: 5px 2rem;
+    }
+}
+a {
+    padding: 12px;
+    border-radius: 20px;
+    color: #3f10e8;
+}
+
+a:hover{
+  background-color: #3f10e892;
+  border-radius: 20px;
+  height: 50px;
+  width: 100px;
+}

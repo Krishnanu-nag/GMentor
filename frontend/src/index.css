@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  cursor: url("/pointinghand.svg"), auto;   
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+body{background-image: url("./bg.svg");}
