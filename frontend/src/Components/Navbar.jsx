@@ -26,7 +26,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 {/* Logo on the left */}
-                <div className="logo"><img src='/logo.png'/></div>
+                <div className="logo"><img src='/logo2.png'/></div>
 
                 {/* Center menu items, hidden on small screens */}
                 <ul className={`menu ${menuOpen ? 'menu-open' : ''}`} ref={menuRef}>
