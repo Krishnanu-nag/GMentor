@@ -1,0 +1,51 @@
+.founders-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f000;
+  }
+  
+  .founder-card {
+    width: 300px;
+    text-align: center;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1),rgba(255, 255, 255,0), rgba(255, 255, 255, 0)); 
+    padding: 20px;
+    border-radius: 15px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  .founder-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .founder-image {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .founder-card:hover .founder-image {
+    transform: scale(1.1);
+  }
+  
+  .founder-name {
+    margin-top: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .founder-description {
+    font-size: 1em;
+    color: #000000;
+    margin-top: 10px;
+    font-weight: normal; /* Ensure text is not bold by default */
+    line-height: 22px;
+  }
+  .founder-description strong {
+    font-weight: bold; /* Make the specific text bold */
+  }
+  
