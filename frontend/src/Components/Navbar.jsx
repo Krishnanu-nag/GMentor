@@ -30,9 +30,10 @@ const Navbar = () => {
 
                 {/* Center menu items, hidden on small screens */}
                 <ul className={`menu ${menuOpen ? 'menu-open' : ''}`} ref={menuRef}>
+                    <li className='auth'><a href="#auth">REGISTER/LOGIN</a></li>
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#mentorship">MENTORSHIP</a></li>
+                    <li><a href="#mentorship">MENTORSHIP</a></li>             
                 </ul>
 
                 {/* MENU button for small screens */}

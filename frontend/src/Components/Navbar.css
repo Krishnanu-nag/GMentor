@@ -4,9 +4,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
-    top: 0;
     z-index: 1000;
+ 
+    /* position: sticky;
+    top: 0;
+    background-image: url("/bg.svg"); */
+
+    /* Blur effect 
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);*/
+   
 }
 .logo img{
     width:200px;
@@ -55,6 +63,10 @@
     flex: 1;
     display: flex;
     justify-content: flex-start;
+}
+
+.auth{
+    display: none;
 }
 
 .register-login-button {
@@ -114,7 +126,6 @@
 
     .menu-button {
         display: block; /* Show MENU button on small screens */
-        margin-right: 50px; /* Pushes it to the far right */
         background: 0;
     }
 
@@ -124,6 +135,9 @@
 
     .auth-buttons {
         display: none; /* Hide original auth buttons on small screens */
+    }
+    .auth{
+        display: block;
     }
 
     .menu .register-login-button {
@@ -136,6 +150,9 @@
 
     .navbar {
         padding: 5px 2rem;
+    }
+    .logo{
+        text-align: left;
     }
 }
 a {

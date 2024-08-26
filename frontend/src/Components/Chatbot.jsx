@@ -88,6 +88,10 @@ const Chatbot = () => {
 export default Chatbot;
 
 
+
+ 
+// without memory 
+
 // import React, { useState, useRef, useEffect } from "react";
 // import axios from "axios";
 // import Navbar from "./Components/Navbar";
