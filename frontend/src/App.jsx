@@ -9,7 +9,7 @@ function App(){
     <>
     <Navbar/>
     <Chatbot/>   
-    {/* <Testimonials/> */}
+    <Testimonials/>
     <Founders/>
     <Footer/>
     </>

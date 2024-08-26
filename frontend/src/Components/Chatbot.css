@@ -118,9 +118,10 @@
     background-color: #3069cd;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 20px;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 .chat-send-button:hover {
