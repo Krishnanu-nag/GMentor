@@ -114,6 +114,7 @@
         box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3);
         /* Ensures items start from the top */
         justify-content: flex-start;
+        z-index: 10000;
     }
 
     .menu-open {
