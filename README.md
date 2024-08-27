@@ -19,3 +19,19 @@ Gmentor is a comprehensive mentorship platform designed to connect mentors and m
 - **API**: RESTful API for data exchange
 - **Authentication**: JWT (JSON Web Tokens)
 - **Speech Recognition**: `webkitSpeechRecognition` for voice inputs
+
+## 📜 Usage
+
+1. **Register/Login**: Create an account or log in to access all mentorship features.
+2. **Explore Mentors**: Browse mentor profiles to find a suitable mentor based on your needs.
+3. **Start a Chat**: Use the chatbot for guidance or initiate a conversation with your mentor.
+4. **Voice Commands**: Utilize the speech recognition feature for voice-based interactions.
+
+## 📞 Contact
+
+- **Project Maintainer**: Krishnanu Nag
+- **Email**: [krishnanunag@gmail.com](mailto:krishnanunag@gmail.com)
+- **LinkedIn**: [Krishnanu Nag](https://www.linkedin.com/in/krishnanu-nag/)
+- **Website**: [Gmentor Portfolio](https://krishnanu-nag.github.io/Portfolio_final/)
+
+**Feel free to reach out if you have any questions or suggestions!**
