@@ -1,6 +1,6 @@
 # 🌟 Gmentor: Full-Stack Mentorship Platform 🌟
 
-![Gmentor Logo](./frontend/logo2.png) <!-- Replace with the actual path to your logo -->
+![Gmentor Logo](./frontend/public/logo2.png) <!-- Replace with the actual path to your logo -->
 
 Gmentor is a comprehensive mentorship platform designed to connect mentors and mentees across various fields, providing guidance, resources, and support to help individuals achieve their goals.
 
